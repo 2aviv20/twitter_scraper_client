@@ -13,7 +13,7 @@ import { Top5} from './interfaces/top5.interface';
 export class AppComponent implements OnInit {
   private title:string = 'cycurity-client';
   public profileData: Profile;
-  private top5Data: Top5;
+  public top5Data: Top5;
   constructor(private dataService: DataService){
   }
 
