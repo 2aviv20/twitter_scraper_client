@@ -1,10 +1,15 @@
 
 .loader{
     position: absolute;
-    left: 30%;
+    width: 4em;
+    left: 50%;
+    margin-left: -4em;
     top: 150px;
     z-index: 1;
     text-align: center
+}
+.loader img {
+    width: 4em;
 }
 .loading{
     text-align: center;
