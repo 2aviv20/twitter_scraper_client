@@ -1,0 +1,35 @@
+.tweet{
+    border-bottom: 1px solid #e6ecf0;
+    padding-top: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+.tweet:hover{
+    background-color: #f5f8fa;
+}
+.profileImage img{
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    border: 3px solid white;
+}
+.name {
+    font-weight: bold;
+    font-size: 14px;
+}
+.screenName{
+    font-size: 14px;
+    color: #657786;
+}
+.tweetText{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+}
+.icons{
+    margin-bottom: 10px;
+}
+.iconItem{
+    display: inline-block;
+    vertical-align: top;
+}

@@ -1,0 +1,50 @@
+<div class="row profile">
+  <div class="col-xl-12 col-lg-12 col-md-4 col-sm-6 col-6">
+    <div class="row">
+      <div class="col-12">
+        <div class="profileImage">
+          <img [src]="data.profileImage">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-12 col-lg-12 col-md-8 col-sm-6 col-6">
+    <div class="row name">
+      <div class="col-12">
+        {{data.name}}
+      </div>
+    </div>
+  
+    <div class="row screenName">
+      <div class="col-12">
+          @{{data.screenName}}
+      </div>
+    </div>
+  
+    <div class="row bio">
+      <div class="col-12">
+        {{data.bio}}
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-12">
+        <div class="join">Join Date {{data.joinDate | date: 'dd/MM/yyyy'}}</div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-12 noFollowers">
+        Number Of Followers {{data.followerCount}}
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-12 noTweets">
+        Number Of Total Tweets {{data.tweetCount}}
+      </div>
+    </div>
+  </div>
+
+</div>

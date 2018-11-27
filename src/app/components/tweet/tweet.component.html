@@ -1,0 +1,39 @@
+  <div class="tweet">
+      <div class="row">
+          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 profileImage">
+              <img [src]="profileImage">
+          </div>
+          <div class="col-xl-11 col-lg-11 col-md-11 col-sm-10 col-10">
+            <div class="row">
+                <div class="col-xl-1 col-lg-2 col-md-4 col-sm-4 col-4 name">{{name}}</div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-5 col-5 screenName">@{{data.screenName}}</div>
+                <div class="col-xl-4 col-lg-2 col-md-3 col-sm-3 col-3 date">{{data.time | date:'dd/MM/yyyy'}}</div>      
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 tweetText">
+                    {{data.text}}
+                  </div>
+            </div>
+
+            <div class="row icons">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4">
+                    <div class="material-icons iconItem">replay</div>
+                    <div class="iconItem">{{data.retweetCount}} </div>
+                </div>
+              
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4">
+                    <div class="material-icons iconItem">favorite</div>
+                    <div class="iconItem">{{data.favoriteCount}} </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4">
+                    <div class="material-icons iconItem">comment</div>
+                    <div class="iconItem">{{data.replyCount}} </div>
+                </div>
+            </div>
+
+          </div>
+      </div>
+  </div>
+    
